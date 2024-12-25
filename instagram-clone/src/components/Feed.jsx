@@ -5,21 +5,23 @@ const Feed = () => {
   const posts = [
     {
       id: 1,
-      title: 'First Post',
+      username: 'joshua_l',
+      location: 'Tokyo, Japan',
       image: 'https://via.placeholder.com/400',
-      description: 'This is my first post!',
+      description: 'Amazing view of the city!',
     },
     {
       id: 2,
-      title: 'Second Post',
+      username: 'another_user',
+      location: 'New York, USA',
       image: 'https://via.placeholder.com/400',
-      description: 'Another day, another post!',
+      description: 'City that never sleeps!',
     },
   ]; // Sample data
 
   return (
     <div className="max-w-lg mx-auto p-4">
-      {posts.map((post) => (
+      {posts.map(post => (
         <Post key={post.id} post={post} />
       ))}
     </div>
